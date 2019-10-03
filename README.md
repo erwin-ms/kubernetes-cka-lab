@@ -35,9 +35,9 @@ Example:
 Last login: Mon October 03 09:24:31 2019 from 192.168.121.1
 [vagrant@master ~]$ kubectl get nodes
 NAME     STATUS   ROLES    AGE     VERSION
-master   Ready    master   2m57s   v1.13.2
-node1    Ready    <none>   2m15s   v1.13.2
-node2    Ready    <none>   2m12s   v1.13.2
+master   Ready    master   2m57s   v1.16.1
+node1    Ready    <none>   2m15s   v1.16.1
+node2    Ready    <none>   2m12s   v1.16.1
 ```
 
 
