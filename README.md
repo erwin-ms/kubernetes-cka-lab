@@ -1,9 +1,7 @@
 CKA Lab
 =======
 
-Laboratory environment for "Certified Kubernetes Administrator (CKA)" Linux Academy course
-
-kubernetes v1.13 (to use a different version look at https://github.com/pbacterio/cka_lab/tags)
+Laboratory environment for "Certified Kubernetes Administrator (CKA)" 
 
 Build cluster
 -------------
