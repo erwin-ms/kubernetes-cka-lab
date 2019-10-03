@@ -14,9 +14,13 @@ mkdir -p $HOME/.kube
 sudo cp -i /etc/kubernetes/admin.conf $HOME/.kube/config
 sudo chown $(id -u):$(id -g) $HOME/.kube/config
 
-echo "[TASK 3] Install Flannel"
+echo "Install Flannel"
 sysctl net.bridge.bridge-nf-call-iptables=1
 kubectl apply -f https://raw.githubusercontent.com/coreos/flannel/master/Documentation/kube-flannel.yml
-kubectl apply -f "https://cloud.weave.works/k8s/net?k8s-version=$(kubectl version | base64 | tr -d '\n')"
+#kubectl apply -f "https://cloud.weave.works/k8s/net?k8s-version=$(kubectl version | base64 | tr -d '\n')"
 echo 'source <(kubectl completion bash)' >> $HOME/.bashrc
 
+echo "Install Dashboard Kubernetes"
+kubectl apply -f /provision/kubernetes-dashboard.yml
+kubectl apply -f /provision/kubernetes-dashboard-rbac.yml
+echo 'source <(kubectl completion bash)' >> $HOME/.bashrc

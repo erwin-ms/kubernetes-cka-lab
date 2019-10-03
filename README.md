@@ -31,8 +31,8 @@ So you can use kubectl on a easy way.
 Example:
 
 ```
-[pbacterio@localhost cka_lab]$ vagrant ssh master
-Last login: Mon Jan 28 09:24:31 2019 from 192.168.121.1
+[abraao@localhost cka_lab]$ vagrant ssh master
+Last login: Mon October 03 09:24:31 2019 from 192.168.121.1
 [vagrant@master ~]$ kubectl get nodes
 NAME     STATUS   ROLES    AGE     VERSION
 master   Ready    master   2m57s   v1.13.2
