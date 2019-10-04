@@ -21,6 +21,6 @@ kubectl apply -f https://raw.githubusercontent.com/coreos/flannel/master/Documen
 echo 'source <(kubectl completion bash)' >> $HOME/.bashrc
 
 echo "Install Dashboard Kubernetes"
-kubectl apply -f /provision/kubernetes-dashboard.yml
-kubectl apply -f /provision/kubernetes-dashboard-rbac.yml
+kubectl apply -f /vagrant/provision/kubernetes-dashboard.yml
+kubectl apply -f /vagrant/provision/kubernetes-dashboard-rbac.yml
 echo 'source <(kubectl completion bash)' >> $HOME/.bashrc

@@ -2,6 +2,9 @@
 # Created by abraaojs
 set -x
 
+yum update -y
+yum -y install epel-release
+yum  -y instal git
 
 echo "[TASK 2] Disable SELINUX"
 sed -i -e s/enforcing/disabled/g /etc/sysconfig/selinux
