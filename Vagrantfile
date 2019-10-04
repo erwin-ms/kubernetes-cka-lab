@@ -3,9 +3,9 @@
 
 Vagrant.configure("2") do |config|
   config.vm.box = "centos/7"
-  config.vm.provision "shell", inline: <<-SHELL
-  echo "sudo su -" >> ~/.zshrc
-  SHELL
+  # enable NFS
+  config.vm.synced_folder ".", "/vagrant", type: "nfs"
+  # Provision and Install Kubernetes
   config.vm.provision "shell", path: "provision/kubernetes_install.sh"
   config.vm.define "master" do |master|
     master.vm.hostname = "master"
