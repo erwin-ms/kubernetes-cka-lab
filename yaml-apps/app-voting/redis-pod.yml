@@ -10,4 +10,4 @@ spec:
   - name: redis-pod
     image: redis
     ports:
-    - contanerPort: 6379
+      - contanerPort: 6379

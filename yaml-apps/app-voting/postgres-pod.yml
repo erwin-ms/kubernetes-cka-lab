@@ -10,4 +10,4 @@ spec:
   - name: postgres-pod
     image: postgres
     ports:
-    - contanerPort: 5432
+      - contanerPort: 5432
