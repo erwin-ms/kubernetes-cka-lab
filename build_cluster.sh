@@ -1,4 +1,6 @@
 #!/bin/bash
+# Created by Abraao Silva
+# Date 3/8/2020
 set -x
 
 vagrant up

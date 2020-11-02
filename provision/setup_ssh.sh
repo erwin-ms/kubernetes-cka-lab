@@ -1,4 +1,6 @@
 #!/bin/bash
+# Created by abraaojs
+
 ROOT_HOME="/root"
 ROOT_SSH_HOME="$ROOT_HOME/.ssh"
 ROOT_AUTHORIZED_KEYS="$ROOT_SSH_HOME/authorized_keys"

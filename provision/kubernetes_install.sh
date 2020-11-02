@@ -4,7 +4,7 @@ set -x
 
 yum update -y
 yum -y install epel-release
-yum  -y instal git
+yum install -y git wget curl conntrack-tools vim net-tools telnet tcpdump bind-utils socat ntp kmod ceph-common dos2unix
 
 echo "[TASK 2] Disable SELINUX"
 sed -i -e s/enforcing/disabled/g /etc/sysconfig/selinux
